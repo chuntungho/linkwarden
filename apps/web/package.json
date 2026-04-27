@@ -13,7 +13,7 @@
     "lint": "next lint",
     "e2e": "playwright test e2e",
     "format": "prettier --write \"**/*.{ts,tsx,js,json,md}\"",
-    "postinstall": "playwright install --with-deps chromium"
+    "postinstall": "playwright install --with-deps chromium || true"
   },
   "dependencies": {
     "@atlaskit/tree": "^8.8.7",
@@ -38,7 +38,6 @@
     "@radix-ui/react-tooltip": "^1.2.7",
     "@stripe/stripe-js": "^7.8.0",
     "@tanstack/react-query": "^5.51.15",
-    "@tanstack/react-query-devtools": "^5.51.15",
     "axios": "^1.5.1",
     "bcrypt": "^5.1.0",
     "bootstrap-icons": "^1.11.2",
@@ -46,7 +45,6 @@
     "clsx": "^2.1.1",
     "colorjs.io": "^0.5.2",
     "csstype": "^3.1.2",
-    "dompurify": "^3.2.4",
     "eslint-config-next": "13.4.9",
     "formidable": "^3.5.1",
     "fuse.js": "^7.0.0",
@@ -65,7 +63,6 @@
     "node-fetch": "^2.7.0",
     "nodemailer": "^7.0.11",
     "papaparse": "^5.5.3",
-    "playwright": "1.57.0",
     "react": "19.1.0",
     "react-colorful": "^5.6.1",
     "react-dom": "19.1.0",
@@ -79,7 +76,6 @@
     "react-window": "^1.8.10",
     "rss": "^1.2.2",
     "rss-parser": "^3.13.0",
-    "sharp": "^0.34.5",
     "socks-proxy-agent": "^8.0.2",
     "stripe": "^18.4.0",
     "tailwind-merge": "^3.3.0",

@@ -6,8 +6,6 @@ ENV COREPACK_ENABLE_DOWNLOAD_PROMPT=0
 
 ENV PRISMA_HIDE_UPDATE_MESSAGE=1
 
-ENV NODE_OPTIONS="--max-old-space-size=200"
-
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN mkdir /data
@@ -53,4 +51,4 @@ HEALTHCHECK --interval=30s \
 
 EXPOSE 3000
 
-CMD ["sh", "-c", "yarn prisma:deploy && yarn concurrently:start"]
+CMD ["sh", "-c", "yarn prisma:deploy && NODE_OPTIONS='--max-old-space-size=256' yarn concurrently:start"]

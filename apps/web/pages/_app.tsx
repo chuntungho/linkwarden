@@ -11,7 +11,6 @@ import { Session } from "next-auth";
 import { isPWA } from "@/lib/utils";
 // import useInitialData from "@/hooks/useInitialData";
 import { appWithTranslation } from "next-i18next";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { NextPage } from "next";
 
@@ -110,7 +109,6 @@ function App({ Component, pageProps }: AppPropsWithLayout) {
           {/* </GetData> */}
         </AuthRedirect>
       </SessionProvider>
-      <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   );
 }
