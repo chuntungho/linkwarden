@@ -51,4 +51,4 @@ HEALTHCHECK --interval=30s \
 
 EXPOSE 3000
 
-CMD ["sh", "-c", "yarn prisma:deploy && NODE_OPTIONS='--max-old-space-size=256' yarn concurrently:start"]
+CMD ["sh", "-c", "yarn prisma:deploy && yarn concurrently:start"]
